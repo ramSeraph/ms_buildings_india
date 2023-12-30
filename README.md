@@ -6,6 +6,10 @@ Data is from [Microsoft Global ML BUilding Footprints](https://github.com/micros
 
 Data License is ODbl
 
+Data is available at tileurl: https://indianopenmaps.fly.dev/ms-buildings/{z}/{x}/{y}.pbf
+
+Tile deployment code is at [indianopenmaps](https://github.com/ramSeraph/indianopenmaps)
+
 I think running the following commands might let you convert data into a more analyzable format. Untested though.
 ```
 pmtiles convert ms_buildings_india-z14-part0.pmtiles ms_buildings_india-z14-part0.mbtiles
