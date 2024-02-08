@@ -9,14 +9,3 @@ Data License is ODbl
 Data is available at tileurl: https://indianopenmaps.fly.dev/ms-buildings/{z}/{x}/{y}.pbf
 
 Tile deployment code is at [indianopenmaps](https://github.com/ramSeraph/indianopenmaps)
-
-I think running the following commands might let you convert data into a more analyzable format. Untested though.
-```
-pmtiles convert ms_buildings_india-z14-part0.pmtiles ms_buildings_india-z14-part0.mbtiles
-ogr2ogr -oo ZOOM_LEVEL=14 -f GeoJSONSeq ms_buildings_india.geojsonl ms_buildings_india-z14-part0.mbtiles
-```
-I suspect there might be duplicates in the data produced.
-
-If someone is interested I can upload the dataset in a more analysis friendly format. 
-Alternatively you can follow the steps listed in `steps.sh` except the tiling part to get data into the required format.
-
