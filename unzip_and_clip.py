@@ -26,7 +26,7 @@ def load_india_shape():
 
 india_shape = load_india_shape()
 
-with open('data/ms_roads_india.geojsonl', 'a') as f:
+with open('data/ms_buildings_india.geojsonl', 'a') as f:
     paths = Path('data/').glob('*/*/*.csv.gz')
     #paths = Path('.').glob('*.csv.gz')
     count = 0

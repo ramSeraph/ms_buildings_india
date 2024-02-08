@@ -22,7 +22,7 @@ python unzip_and_clip.py
 
 # tile the data 
 cd data
-tippecanoe -x height -j '{ "*": [ "attribute-filter", "confidence", [ ">=", "$zoom", 13 ] ] }' -P -o ms_buildings_india.mbtiles --no-clipping --no-duplication --simplify-only-low-zooms --drop-densest-as-needed --extend-zooms-if-still-dropping -l ms_buildings_india -n ms_buildings_india -A '<a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank" rel="noopener noreferrer">Microsoft ML Buildings</a>' ms_buildings_india.geojsonl
+tippecanoe -x height -j '{ "*": [ "attribute-filter", "confidence", [ ">=", "$zoom", 13 ] ] }' -P -o ms_buildings_india.mbtiles --simplify-only-low-zooms --drop-densest-as-needed --extend-zooms-if-still-dropping -l ms_buildings_india -n ms_buildings_india -A '<a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank" rel="noopener noreferrer">Microsoft ML Buildings</a>' ms_buildings_india.geojsonl
 cd -
 
 # break it into a mosaic of pmtiles files less than 2 GB 
